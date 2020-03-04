@@ -15,7 +15,7 @@ const Chat =({location})=>{
     const [room,setRoom] = useState('');
     const [message,setMessage] = useState('');
     const [messages,setMessages] = useState([]);
-    const ENDPOINT = process.env.REACT_APP_ENDPOINT;
+    const ENDPOINT = "https://reactrealtime-chat-app.herokuapp.com/";
 
     useEffect(()=>{
         const{name,room} = queryString.parse(location.search);
